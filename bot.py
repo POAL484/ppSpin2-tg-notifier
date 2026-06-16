@@ -27,7 +27,7 @@ class TgNotifierBot(AsyncTeleBot):
             await ws.recv()
 
     async def msg_pwgood(self, msg: tbt.Message):
-        if not msg.sender_chat.type == "channel" or not (str(msg.sender_chat.id) == "-1001350617553"): return
+        if not msg.sender_chat.type == "channel" or not (str(msg.sender_chat.id) == "-1002030266560"): return
         text = ''
         if msg.text: text += msg.text
         if msg.caption: text += msg.caption
